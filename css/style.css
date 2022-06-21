@@ -1,0 +1,209 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+      }
+      
+      /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+    
+}
+
+/*Style the Loader*/
+
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+
+
+/* Style the video: 100% width and height to cover the entire window */
+
+#instaVideo {
+    position: fixed;
+    
+    right: 0;
+    bottom: 0;
+    width: 100%;
+   /* max-height: 400%; */
+   height: auto;
+
+}
+
+
+form {
+    width: 500px;
+    height: auto;
+    margin: 50px 450px;
+    float: left;
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    clear: both;
+    
+}
+
+.insta-logo {
+    align-self: center;
+    margin: 30px 0 15px 0;
+    background-position-x:center;
+    background-position-y: center;
+    padding-left: 170px;
+    max-width: 200px;
+    margin-left: 1px;
+    image-rendering: optimizeSpeed;
+    mask-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3));
+    }
+
+.imgcontainer {
+    text-align: center;
+    margin: 30px 0 12px 0;
+    padding-top: -100%;
+    margin-left: 30px;
+}
+
+label , .text {
+    color:white;
+    text-align: center;
+    padding-right: 50px;
+    display: flex;
+    margin-left: 5px;
+    margin-bottom:5px;
+    
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    
+}
+
+input .placeholder , #plh , #passwd {
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 1; /* Firefox */
+    border: none;
+  }
+  
+#check {
+    color: aliceblue;
+}
+
+
+button {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color:darkmagenta;
+}
+
+button:active {
+  background-color: #3e468e;
+  transform: translateY(4px);
+}
+
+.cancelbtn .check{
+    width: auto;
+    padding: 10px 18px;
+    background-color:darkmagenta;
+}
+
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+    margin-top: -5%;
+}
+
+.container {
+    padding: 16px;
+    position: relative;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+    padding-right: 2%;
+    text-decoration: none;
+    color: white;
+  }
+
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
